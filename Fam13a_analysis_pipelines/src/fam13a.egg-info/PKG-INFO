@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: fam13a
+Version: 1.0.0
+Summary: A short description of the project.
+Author: Navot Arad
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7

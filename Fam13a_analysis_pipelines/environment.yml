@@ -1,0 +1,40 @@
+name: fam13a-dev
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7.*
+# mathematics
+  - numpy >=1.16  # for numeric arrays
+  - pysal>=2.0.0 # for spatial autocorrelation
+# data
+  - pandas >=1  # for data frames
+# plotting
+  - matplotlib >=3.1  # for basic plotting
+  - altair >=3  # for declarative plotting
+  - altair_data_server # for interactive plots
+  - altair_saver # for saving interactive plots
+  - altair_viewer # for viewing interactive plots
+
+# image processing
+  - scikit-image  # for image processing
+  - opencv # for image and video processing
+  - ffmpeg # for video conversion
+  - imageio-ffmpeg
+# notebooks
+  - jupyter  # for notebooks
+# jupyterlab
+  - jupyterlab  # for notebooks IDE
+  - nodejs  # for jupyterlab build
+# code quality
+  - pylint  # for linting  # TODO: Check overlap with flake8
+  - isort  # for import standardization
+# support
+  - tqdm  # for progress bar
+# utilities
+  - line_profiler  # for line-by-line profiling
+  - pip >=19  # for native python installer
+  - awscli # for s3 bucket authentication
+  - click # for cli commands
+  - pip:
+    - rootpath # for detecting root project directory
+    - -e .  # project code
